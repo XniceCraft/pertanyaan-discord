@@ -1,1 +1,1 @@
-worker: uvicorn run:app --reload --port $PORT
+web: uvicorn run:app --host 0.0.0.0 --port $PORT
