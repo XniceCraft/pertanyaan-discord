@@ -1,1 +1,1 @@
-worker: uvicorn run:app --replace
+worker: gunicorn -w 4 run:app --worker-class uvicorn.workers.UvicornWorke
