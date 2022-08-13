@@ -1,1 +1,1 @@
-worker: gunicorn -w 4 run:app --worker-class uvicorn.workers.UvicornWorke
+worker: uvicorn run:app --reload
