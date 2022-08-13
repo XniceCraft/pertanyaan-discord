@@ -7,9 +7,9 @@ import random
 app=FastAPI()
 
 @app.get("/kota-kabupaten", response_class=PlainTextResponse)
-def kota() -> str:
+def kota():
     return getline("kota-kabupaten.txt",random.randint(1,472)).replace("\n","")
 
 @app.get("/pertanyaan", response_class=JSONResponse)
-def pertanyaan() -> dict:
+def pertanyaan():
     return jloads(getline("list_pertanyaan.json", random.randint(1,17)).replace("\n",""))
