@@ -1,1 +1,1 @@
-worker: uvicorn run:app --reload
+worker: uvicorn run:app --reload --port $PORT
