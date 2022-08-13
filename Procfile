@@ -1,1 +1,1 @@
-worker: uvicorn run:app --replace --port 80
+worker: uvicorn run:app --replace
