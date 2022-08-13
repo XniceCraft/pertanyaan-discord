@@ -5,6 +5,9 @@ from json import loads as jloads
 import random
 
 app=FastAPI()
+@app.get("/", response_class=PlainTextResponse)
+def main():
+    return "Hi"
 
 @app.get("/kota-kabupaten", response_class=PlainTextResponse)
 def kota():
