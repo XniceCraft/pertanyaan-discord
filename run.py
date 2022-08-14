@@ -33,4 +33,4 @@ def kota() -> dict:
 @app.get("/pertanyaan", response_class=JSONResponse)
 def pertanyaan() -> dict:
     '''Mereturn pertanyaan secara acak'''
-    return jloads(getline("daftar-pertanyaan.json", randint(1,42)).replace("\n",""))
+    return jloads(getline("daftar-pertanyaan.json", randint(1,51)).replace("\n",""))
